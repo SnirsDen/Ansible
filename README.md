@@ -29,4 +29,19 @@ host_key_checking = false
 
 inventory = ./hosts
 
+Базы команд:
+ansible -doc -l - список всех команд
 
+ansible all -m get_url -a "url=https://postimg.cc/mtq7PTH1 dest=/home" -b -K
+
+ansible all -m file -a "path=/home/privet.txt state=absent" -b -K
+
+ansible all -m copy -a "src=privet.txt dest=/home mode=777" -b -K
+
+ansible all -m shell -a "mkdir /home/den/DENIS"
+
+ansible all -m apt -a "name=stress state=absent" -b -K
+
+ansible all -m apt -a "name=stres state=installed" -b -K
+
+ansible -doc -l
