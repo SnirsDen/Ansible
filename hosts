@@ -1,0 +1,6 @@
+[staging]
+server1 ansible_host=192.168.28.137
+
+
+[production]
+server2 ansible_host=192.168.28.138 
