@@ -1,6 +1,6 @@
 # Ansible
 
-## Ubuntu
+# Ubuntu
 
 $ sudo apt update
 $ sudo apt install software-properties-common
@@ -45,3 +45,13 @@ ansible all -m apt -a "name=stress state=absent" -b -K
 ansible all -m apt -a "name=stres state=installed" -b -K
 
 ansible -doc -l
+
+### Чтобы запускатьplaybook без пароля на управляемых хостах
+
+
+Разрешить sudo без пароля
+sudo visudo
+
+Добавить в конец файла:
+
+username ALL=(ALL) NOPASSWD: ALL
