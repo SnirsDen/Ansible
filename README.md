@@ -51,5 +51,7 @@ ansible -doc -l
 
 Разрешить sudo без пароля
 sudo visudo
+
 Добавить в конец файла:
+
 username ALL=(ALL) NOPASSWD: ALL
